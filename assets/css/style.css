@@ -1,0 +1,104 @@
+
+
+
+body {
+background: #4aaaa5;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+#gameName {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #bdac93;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+        
+   }
+
+#directions {
+    font-size: 15px;
+    color: black;
+    background-color: #ffffff;
+    text-align: justify;
+    padding: 20px;
+    line-height: 20px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 23px;
+    float: left;
+    border: 1px solid black;
+ }
+
+ .numbers {
+     font-size: 25px;
+     color: black;
+     background-color: #ffffff;
+     text-align: center;
+     padding: 20px;
+     line-height: 20px;
+     width: 150px;
+    
+     
+     
+ }
+
+ .subTitle {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+    
+}
+.subNumbers {
+    font-size: 25px;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    line-height: 20px;
+    width: 150px;
+}
+
+#scoreBox1 {
+    /* margin: auto; */
+    float: left;
+    overflow: auto;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 23px;
+}
+
+#scoreBox2 {
+    float: left;
+    overflow: auto;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 23px;
+    
+}
+.jewelButtons {
+    float: right;
+    clear: both;
+    margin-right: 90px;
+}

@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Added link to the jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>jQuery Crystals Collector Game</title>
 </head>
 <body>
-
-
-
-
-
-
-
-
-
-    
-    <script type="text/javascript" src="assets/javascript/game.js"></script>   
-</body>
-</html>
+    <div id="container">
+        <div id="gameName">Crystals Collector!</div>
+          
+            <div id="directions">
+                <p><strong>Directions</strong></p>
+                <p>At the start of each game, you will be given a random number (# to Match).</p>
+                <p>There are 4 crystals below. By clicking on a crystal, you will
+                    add a specific amount of points to your total score.</p>
+                <p><strong>WIN</strong> by matching "Your Score" to the "# to Match".</p>
+                <p><strong>LOSE</strong> if "Your Score" goes higher than "# to Match".</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>For every new game, the value of each crystal will change.</p>
+            </div>
+            <div id="scoreBox1">
+                <div id="yourScoreTitle" class="title">Your Score</div>
+                <div id="YourScoreNumber" class="numbers">10</div>
+                <div id="randomNumberTitle" class="title"># to Match</div>
+                <div id="randomNumber" class="numbers">45</div>
+            </div>
+            <div id="scoreBox2">   
+                <div id="scoreBoardWinTitle" class="subTitle">WINS</div>
+                <div id="scoreBoardWinNbr" class="subNumbers">2</div>
+                <div id="scoreBoardLossTitle" class="subTitle">LOSSES</div> 
+                <div id="scoreBoardLossNbr" class="subNumbers">0</div>
+            </div>    
+            <div class="jewelButtons">
+                    <!-- jewel buttons -->
+                    <button id="jewelButtonA" class="btn btn-primary btn-lg">A</button>
+                    <button id="jewelButtonB" class="btn btn-primary btn-lg">B</button>
+                    <button id="jewelButtonC" class="btn btn-primary btn-lg">C</button>
+                    <button id="jewelButtonD" class="btn btn-primary btn-lg">D</button>
+            </div> 
+                
+                
+                
+                
+                
+            </div> <!-- end of Container -->
+            
+            <script type="text/javascript" src="assets/javascript/game.js"></script>   
+        </body>
+        </html>
