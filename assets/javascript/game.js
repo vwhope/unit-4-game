@@ -49,42 +49,42 @@ function zeroYourScore() {
 }
 
 // clear text on all buttons so user can't see button value
-function clearBtnText() {
-    $("#jewelButtonA").text("");  
-    $("#jewelButtonB").text("");  
-    $("#jewelButtonC").text("");  
-    $("#jewelButtonD").text("");  
-}
+// function clearBtnText() {
+//     $("#jewelButtonA").text("");  
+//     $("#jewelButtonB").text("");  
+//     $("#jewelButtonC").text("");  
+//     $("#jewelButtonD").text("");  
+// }
 
 
 
 
-// once user clicks any button, the gameStart function will execute
+// once user clicks any button, this gameStart function will execute
 function gameStart() {
     console.log("button name:" + buttonName);
     // Determine button clicked, get corresponding random number value, add to yourScore
     if(buttonName === "jewelButtonA") {
         yourScore = yourScore + valJewelBtns[0];
         $("#yourScoreNumber").text(yourScore);
-        $("#jewelButtonA").text(valJewelBtns[0]);
+        // $("#jewelButtonA").text(valJewelBtns[0]);
     };
     
     if(buttonName === "jewelButtonB") {
         yourScore = yourScore + valJewelBtns[1];
         $("#yourScoreNumber").text(yourScore);
-        $("#jewelButtonB").text(valJewelBtns[1]);
+        // $("#jewelButtonB").text(valJewelBtns[1]);
     };
     
     if(buttonName === "jewelButtonC") {
         yourScore = yourScore + valJewelBtns[2];
         $("#yourScoreNumber").text(yourScore);
-        $("#jewelButtonC").text(valJewelBtns[2]);
+        // $("#jewelButtonC").text(valJewelBtns[2]);
     };
     
     if(buttonName === "jewelButtonD") {
         yourScore = yourScore + valJewelBtns[3];
         $("#yourScoreNumber").text(yourScore);
-        $("#jewelButtonD").text(valJewelBtns[3]);
+        // $("#jewelButtonD").text(valJewelBtns[3]);
     };
         
     // - update wins/losses accordingly
@@ -98,7 +98,7 @@ function gameStart() {
         generateRandomNbr();
         generateRandomNbrButtons();
         zeroYourScore();
-        clearBtnText();
+        // clearBtnText();
 
     } else if(yourScore === randomNbr) {
         $("#gameStatusMsg").text("Congratulations! You Win!");
@@ -107,7 +107,7 @@ function gameStart() {
         generateRandomNbr();
         generateRandomNbrButtons();
         zeroYourScore();
-        clearBtnText();
+        // clearBtnText();
     } else {
         console.log("fn:gameStart: still playing");
     } // end if
@@ -124,7 +124,7 @@ generateRandomNbr(); // on HTML page load will provide a new random number to ma
 generateRandomNbrButtons(); // on HTML page load will put random nbr for each of the 4 crystals into an array
 zeroYourScore(); // on HTML page load will zero out the user's score, but not their wins/losses
 
-// Register event listeners/handlers for ANY button click event
+// Register event listeners/handlers for ANY button click event (user can only click on the four crystals)
 
 $(".btn").click(function() {
     alert("handler for .click() has been called");

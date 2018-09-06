@@ -1,7 +1,7 @@
 
 body {
     background: url(../images/wallpaper.wiki-Crystal-Wallpaper-Full-HD-PIC-WPB0011435.jpg);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;  
 }
 
@@ -100,7 +100,6 @@ body {
     width: 323px;
     font-size: 18px;
     font-style: bold;
-    float: left;
     border: 1px solid black;
     background-color:green;
     color: #ffffff;
@@ -109,10 +108,79 @@ body {
     padding-right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    float: left;
+    clear: right;
+    
 }
 
 .jewelButtons {
-    float: right;
-    clear: both;
-    margin-right: 90px;
+    float: right; 
+    clear: both; 
+    margin-right: 45px;
+    margin-bottom: 100px;
+    
+}
+
+.btn {
+    margin: 10px;
+}
+
+footer,
+.push {
+    height: 50px;
+}
+
+/* end sticky footer styling */
+
+.footerContainer {
+    border-top: 5px solid #ffffff;
+    width: 100%;
+    background-color:black;
+    color: #ffffff;
+    text-align: center;  
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    line-height: 65px;
+    height: 50px;
+    
+}
+
+
+/* @media queries go here (bottom of style.css) */
+@media only screen and (max-width: 980px) {
+    /* For large screen devices */
+    
+    #container {
+        width: 100%;
+    }
+    
+    #scoreBox1, #scoreBox2, #gameStatusMsg {
+        display: block;
+        overflow: none;
+        clear: both;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For medium screen devices */
+    #container {
+        width: 80%;
+    }
+    
+    /* #scoreBox1, #scoreBox2, #gameStatusMsg {
+        display: block;
+        overflow: none;
+        clear: both;
+    }
+     */
+      
+}
+
+@media only screen and (max-width: 640px) {
+    /* For small screen devices */
+    
+    
 }
