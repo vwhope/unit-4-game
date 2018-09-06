@@ -94,7 +94,7 @@ function gameStart() {
     if(yourScore > randomNbr) {
         $("#gameStatusMsg").text("Sorry, you lose.");
         totLoss++
-        $("#scoreBoardLossNbr").text(toString(totLoss));
+        $("#scoreBoardLossNbr").text(parseInt(totLoss));
         generateRandomNbr();
         generateRandomNbrButtons();
         zeroYourScore();
@@ -103,7 +103,7 @@ function gameStart() {
     } else if(yourScore === randomNbr) {
         $("#gameStatusMsg").text("Congratulations! You Win!");
         totWins++
-        $("#scoreBoardWinNbr").text(toString(totWins));
+        $("#scoreBoardWinNbr").text(parseInt(totWins));
         generateRandomNbr();
         generateRandomNbrButtons();
         zeroYourScore();
