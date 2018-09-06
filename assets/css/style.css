@@ -1,12 +1,8 @@
 
-
-
 body {
-/* background: #4aaaa5; */
-/* background: #f8cf2b; */
-background: url(../images/wallpaper.wiki-Crystal-Wallpaper-Full-HD-PIC-WPB0011435.jpg);
-background-repeat: no-repeat;
-background-size: cover;  
+    background: url(../images/wallpaper.wiki-Crystal-Wallpaper-Full-HD-PIC-WPB0011435.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
 
 #container {
@@ -46,19 +42,19 @@ background-size: cover;
     margin-left: 23px;
     float: left;
     border: 1px solid black;
- }
-
- .numbers {
-     font-size: 25px;
-     color: black;
-     background-color: #ffffff;
-     text-align: center;
-     padding: 20px;
-     line-height: 20px;
-     width: 150px;
 }
 
- .subTitle {
+.numbers {
+    font-size: 25px;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    line-height: 20px;
+    width: 150px;
+}
+
+.subTitle {
     font-size: 18px;
     color: #ffffff;
     background-color: black;
