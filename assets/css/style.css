@@ -32,7 +32,8 @@ body {
     border-radius: 25px;
     font-size: 14px;
     color: black;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background: linear-gradient(#ffffff, lightgrey);
     text-align: justify;
     padding: 20px;
     line-height: 20px;

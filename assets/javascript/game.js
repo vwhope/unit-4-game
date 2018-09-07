@@ -1,17 +1,13 @@
 // JavaScript/jQuery for unit-4-game Crystal Collections
 
 // ================================ BEGIN GLOBAL VARIABLE DEFINITIONS =======================================================
-// set GLOBAL variables - available to all functions - (generally don't want global- is better to make an encapsulated object
+// set GLOBAL variables available to all functions - (generally don't want global- is better to make an encapsulated object)
 var totWins = 0;
 var totLoss = 0;
 var yourScore = 0;
 var randomNbr = 0;
 var randomNbrButton = 0;
 var valJewelBtns = [0,0,0,0];
-var valJewelBtn1 = 0;
-var valJewelBtn2 = 0;
-var valJewelBtn3 = 0;
-var valJewelBtn4 = 0;
 var buttonName;
 
 // ================================ END GLOBAL VARIABLE DEFINITIONS =========================================================
@@ -39,24 +35,14 @@ function generateRandomNbrButtons() {
         console.log(valJewelBtns);
     };
     
-}
+} // end generateRandomNbrButtons
 
 // before user clicks anything, zero out their score and update the HTML page with zero
 function zeroYourScore() {
     var yourScore = 0;
     $("#yourScoreNumber").text(yourScore);
     console.log("Your score:" + yourScore);
-}
-
-// clear text on all buttons so user can't see button value
-// function clearBtnText() {
-//     $("#jewelButtonA").text("");  
-//     $("#jewelButtonB").text("");  
-//     $("#jewelButtonC").text("");  
-//     $("#jewelButtonD").text("");  
-// }
-
-
+} // end zeroYourScore
 
 
 // once user clicks any button, this gameStart function will execute
@@ -98,7 +84,7 @@ function gameStart() {
         generateRandomNbr();
         generateRandomNbrButtons();
         zeroYourScore();
-        // clearBtnText();
+        
         
     } else if(yourScore === randomNbr) {
         $("#gameStatusMsg").text("Congratulations! You Win!");
@@ -107,7 +93,7 @@ function gameStart() {
         generateRandomNbr();
         generateRandomNbrButtons();
         zeroYourScore();
-        // clearBtnText();
+        
     } else {
         console.log("fn:gameStart: still playing");
     } // end if
@@ -127,7 +113,7 @@ zeroYourScore(); // on HTML page load will zero out the user's score, but not th
 // Register event listeners/handlers for ANY button click event (user can only click on the four crystals)
 
 $(".btn").click(function() {
-    alert("the button clicked was:" + this.id);
+    // alert("the button clicked was: " + this.id);
     buttonName = this.id;
     gameStart();
 });
