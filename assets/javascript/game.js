@@ -86,7 +86,7 @@ function gameStart() {
         $("#yourScoreNumber").text(yourScore);
         // $("#jewelButtonD").text(valJewelBtns[3]);
     };
-        
+    
     // - update wins/losses accordingly
     console.log("Your Score:" + yourScore);
     console.log("Random number:" + randomNbr);
@@ -99,7 +99,7 @@ function gameStart() {
         generateRandomNbrButtons();
         zeroYourScore();
         // clearBtnText();
-
+        
     } else if(yourScore === randomNbr) {
         $("#gameStatusMsg").text("Congratulations! You Win!");
         totWins++
@@ -111,7 +111,7 @@ function gameStart() {
     } else {
         console.log("fn:gameStart: still playing");
     } // end if
-
+    
 } // end function gameStart 
 
 
@@ -127,7 +127,6 @@ zeroYourScore(); // on HTML page load will zero out the user's score, but not th
 // Register event listeners/handlers for ANY button click event (user can only click on the four crystals)
 
 $(".btn").click(function() {
-    alert("handler for .click() has been called");
     alert("the button clicked was:" + this.id);
     buttonName = this.id;
     gameStart();

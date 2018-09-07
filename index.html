@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add link to CSS reset file-->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Add link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Added link to the jQuery library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>jQuery Crystals Collector Game</title>
@@ -15,49 +14,47 @@
 <body>
     <div id="container">
         <div id="gameName">Crystals Collector Game!</div>
-          
-            <div id="directions">
-                <p><strong>Directions</strong></p>
-                <p>At the start of each game, you will be given a random number (# to Match).</p>
-                <p>There are 4 crystals below. By clicking on a crystal, you will
-                    add a specific amount of points to your total score.</p>
+        
+        <div id="directions">
+            <p><strong>Directions</strong></p>
+            <p>At the start of each game, you will be given a random number (# to Match).</p>
+            <p>There are 4 crystals below. By clicking on a crystal, you will
+                add a specific amount of points to your total score.</p>
                 <p><strong>WIN</strong> by matching "Your Score" to the "# to Match".</p>
                 <p><strong>LOSE</strong> if "Your Score" goes higher than "# to Match".</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>For every new game, the value of each crystal will change.</p>
-            </div>
-            <div id="scoreBox1">
-                <div id="yourScoreTitle" class="title">Your Score</div>
-                <div id="yourScoreNumber" class="numbers">0</div>
-                <div id="randomNumberTitle" class="title"># to Match</div>
-                <div id="randomNbr" class="numbers">0</div>
-            </div>
-            <div id="scoreBox2">   
-                <div id="scoreBoardWinTitle" class="subTitle">WINS</div>
-                <div id="scoreBoardWinNbr" class="subNumbers">0</div>
-                <div id="scoreBoardLossTitle" class="subTitle">LOSSES</div> 
-                <div id="scoreBoardLossNbr" class="subNumbers">0</div>
-            </div>    
-            <div id="gameStatusMsg">Click a jewel to play the game!</div>
-            <div class="jewelButtons">
-                    <!-- jewel buttons -->
-                    <button id="jewelButtonA" class="btn btn-primary btn-lg">A</button>
-                    <button id="jewelButtonB" class="btn btn-primary btn-lg">B</button>
-                    <button id="jewelButtonC" class="btn btn-primary btn-lg">C</button>
-                    <button id="jewelButtonD" class="btn btn-primary btn-lg">D</button>
-            </div> 
-             
-            <footer class="footerContainer">
+                <p>The value of each crystal is hidden from you until you click on it 
+                    and for every new game, the value of each crystal will change.</p>
+                </div>
+                <div id="scoreBox1">
+                    <div id="yourScoreTitle" class="title">Your Score</div>
+                    <div id="yourScoreNumber" class="numbers">0</div>
+                    <div id="randomNumberTitle" class="title"># to Match</div>
+                    <div id="randomNbr" class="numbers">0</div>
+                </div>
+                <div id="scoreBox2">   
+                    <div id="scoreBoardWinTitle" class="subTitle">WINS</div>
+                    <div id="scoreBoardWinNbr" class="subNumbers">0</div>
+                    <div id="scoreBoardLossTitle" class="subTitle">LOSSES</div> 
+                    <div id="scoreBoardLossNbr" class="subNumbers">0</div>
+                </div>    
+                <div id="gameStatusMsg">Click a jewel to play the game!</div>
+                <div class="jewelButtons">
+                    <button id="jewelButtonA" class="btn btn-default btn-lg"><img src="assets/images/blueRupee.jpg" alt="blueBtn" width="42" height="50"/></button>
+                    <button id="jewelButtonB" class="btn btn-default btn-lg"><img src="assets/images/yellowRupee.jpg" alt="blueBtn" width="42" height="50"/></button>
+                    <button id="jewelButtonC" class="btn btn-default btn-lg"><img src="assets/images/redRupee.jpg" alt="blueBtn" width="42" height="50"/></button>
+                    <button id="jewelButtonD" class="btn btn-default btn-lg"><img src="assets/images/greenRupee.jpg" alt="blueBtn" width="42" height="50"/></button>
+                </div> 
+                
+                <footer class="footerContainer">
                     Copyright &copy;
-                  </footer>
-            
-
+                </footer>
+                
             </div> <!-- end of Container -->
-           
-           
-
-
-            <script type="text/javascript" src="assets/javascript/game.js"></script> 
-
+            
+            <!-- Add script file for jQuery library -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!-- path to custom javascript file for game function -->
+            <script src="assets/javascript/game.js"></script> 
+            
         </body>
         </html>

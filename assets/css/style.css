@@ -1,7 +1,6 @@
 
 body {
     background: url(../images/wallpaper.wiki-Crystal-Wallpaper-Full-HD-PIC-WPB0011435.jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;  
 }
 
@@ -30,15 +29,16 @@ body {
 }
 
 #directions {
-    font-size: 15px;
+    border-radius: 25px;
+    font-size: 14px;
     color: black;
     background-color: #ffffff;
     text-align: justify;
     padding: 20px;
     line-height: 20px;
-    width: 400px;
+    width: 350px;
+    margin-right: 50px;
     margin-top: 20px;
-    margin-bottom: 20px;
     margin-left: 23px;
     float: left;
     border: 1px solid black;
@@ -95,7 +95,8 @@ body {
 }
 
 #gameStatusMsg {
-    margin-top: 40px;
+    border-radius: 25px;
+    margin-top: 30px;
     margin-left: 23px;
     width: 323px;
     font-size: 18px;
@@ -111,18 +112,19 @@ body {
     float: left;
     clear: right;
     
-}
-
-.jewelButtons {
-    float: right; 
-    clear: both; 
-    margin-right: 45px;
-    margin-bottom: 100px;
     
 }
 
+.jewelButtons {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    float: left;
+    clear: right;
+ }
+
 .btn {
-    margin: 10px;
+    margin: 5px;
+    background: #fafafa;
 }
 
 footer,
@@ -144,43 +146,41 @@ footer,
     bottom: 0;
     line-height: 65px;
     height: 50px;
-    
 }
-
 
 /* @media queries go here (bottom of style.css) */
 @media only screen and (max-width: 980px) {
     /* For large screen devices */
-    
+    body {
+        background-size: cover;  
+        background-image: height 100%;
+    }
     #container {
         width: 100%;
     }
-    
-    #scoreBox1, #scoreBox2, #gameStatusMsg {
-        display: block;
-        overflow: none;
-        clear: both;
-    }
-    
 }
 
 @media only screen and (max-width: 768px) {
     /* For medium screen devices */
     #container {
-        width: 80%;
+        width: 100%;
     }
     
-    /* #scoreBox1, #scoreBox2, #gameStatusMsg {
+    #scoreBox1, #scoreBox2, {
         display: block;
         overflow: none;
-        clear: both;
     }
-     */
-      
+    
+    body {
+        background-size: cover;  
+        background-image: height 100%;
+    }
 }
 
 @media only screen and (max-width: 640px) {
     /* For small screen devices */
-    
-    
+    body {
+        background-size: cover;  
+        background-image: height 100%;
+    }
 }
