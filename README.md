@@ -1,5 +1,5 @@
 # unit-4-game
-### Crystal Collectors Game - using jQuery
+### Crystals Collector Game - using jQuery
 
 **Skills demonstrated in project:**
 * application of jQuery library/functions
@@ -11,6 +11,7 @@
 * register and respond to event listeners using jQuery
 * manipulation of the HTML page using jQuery (get user input, evaluate input, update HTML page)
 * use of random number generator function
+* html and css files were error checked with Nu Html Checker
     
 **Goal of game:**
 * player tries to match their score to a randomly generated number, without exceeding that number 
@@ -37,7 +38,7 @@
 * after a win or loss, a new "# to Match" is also randomly generated
 
 **Resource Contributors:**
-* Background image from: [Wallpaper.wiki](https://wallpaper.wiki/)
+* Background image from: [Wallpaper.wiki](https://wallpaper.wiki/crystal-wallpaper-free-download.html/2/)
 * Crystal images from: [kisspng](https://kisspng.com/)
 
 

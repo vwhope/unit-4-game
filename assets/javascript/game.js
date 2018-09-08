@@ -10,6 +10,7 @@ var randomNbrButton = 0;
 var valJewelBtns = [0,0,0,0];
 var buttonName;
 
+
 // ================================ END GLOBAL VARIABLE DEFINITIONS =========================================================
 
 // ================================ BEGIN FUNCTION DEFINITIONS  =============================================================
@@ -39,7 +40,7 @@ function generateRandomNbrButtons() {
 
 // before user clicks anything, zero out their score and update the HTML page with zero
 function zeroYourScore() {
-    var yourScore = 0;
+    yourScore = 0;
     $("#yourScoreNumber").text(yourScore);
     console.log("Your score:" + yourScore);
 } // end zeroYourScore
@@ -48,6 +49,8 @@ function zeroYourScore() {
 // once user clicks any button, this gameStart function will execute
 function gameStart() {
     console.log("button name:" + buttonName);
+    $("#gameStatusMsg").text("Keep trying... ");
+
     // Determine button clicked, get corresponding random number value, add to yourScore
     if(buttonName === "jewelButtonA") {
         yourScore = yourScore + valJewelBtns[0];
@@ -95,8 +98,8 @@ function gameStart() {
         zeroYourScore();
         
     } else {
-        console.log("fn:gameStart: still playing");
-    } // end if
+        console.log("gameStart() still playing");
+    } // end if/else conditions
     
 } // end function gameStart 
 
@@ -110,7 +113,7 @@ generateRandomNbr(); // on HTML page load will provide a new random number to ma
 generateRandomNbrButtons(); // on HTML page load will put random nbr for each of the 4 crystals into an array
 zeroYourScore(); // on HTML page load will zero out the user's score, but not their wins/losses
 
-// Register event listeners/handlers for ANY button click event (user can only click on the four crystals)
+// Register event listeners/handlers for ANY button click event, get which button clicked
 
 $(".btn").click(function() {
     // alert("the button clicked was: " + this.id);

@@ -101,7 +101,6 @@ body {
     margin-left: 23px;
     width: 323px;
     font-size: 18px;
-    font-style: bold;
     border: 1px solid black;
     background-color:green;
     color: #ffffff;
@@ -121,7 +120,7 @@ body {
     margin-bottom: 100px;
     float: left;
     clear: right;
- }
+}
 
 .btn {
     margin: 5px;
@@ -154,7 +153,6 @@ footer,
     /* For large screen devices */
     body {
         background-size: cover;  
-        background-image: height 100%;
     }
     #container {
         width: 100%;
@@ -167,14 +165,13 @@ footer,
         width: 100%;
     }
     
-    #scoreBox1, #scoreBox2, {
+    #scoreBox1, #scoreBox2 {
         display: block;
-        overflow: none;
     }
     
     body {
         background-size: cover;  
-        background-image: height 100%;
+        
     }
 }
 
@@ -182,6 +179,6 @@ footer,
     /* For small screen devices */
     body {
         background-size: cover;  
-        background-image: height 100%;
+        
     }
 }
