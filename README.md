@@ -1,4 +1,5 @@
 # unit-4-game
+Deployed Link: [unit-4-game](https://vwhope.github.io/unit-4-game/)
 ### Crystals Collector Game - using jQuery
 
 **Skills demonstrated in project:**
