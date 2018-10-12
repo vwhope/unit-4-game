@@ -2,13 +2,26 @@
 Deployed Link: [unit-4-game](https://vwhope.github.io/unit-4-game/)
 ### Crystals Collector Game - using jQuery
 
-**Skills demonstrated in project:**
+**Problems to solve**
+* use jQuery to manipulate DOM and handle events
+* udpate scoreboard without refreshing the HTML page
+* generate random numbers for each crystal, for each new game
+
+**Solution**
+The jQuery script is loaded in index.html file to allow use of jQuery library. By using jQuery classes in the html file and the $ identifier and syntax in the
+game.js file, the DOM can be directly updated without refreshing the html page and the code to access the DOM is simplified. For example:
+    instead of: document.getElementById("message").innerHTML = "my message";
+    use: $("#message").text("my message");
+
+Also, math.random() is used to randomly generate numbers for each crystal.
+
+**Technical Skills demonstrated in project:**
 * application of jQuery library/functions
 * application of JavaScript language
 * application of CSS and reset files
 * responsive web design
 * basic understanding of SCOPE (global vs local)
-* basic understanding of context ("this")
+* basic understanding of context ("this" keyword)
 * register and respond to event listeners using jQuery
 * manipulation of the HTML page using jQuery (get user input, evaluate input, update HTML page)
 * use of random number generator function
