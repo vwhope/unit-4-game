@@ -50,7 +50,7 @@ function zeroYourScore() {
 function gameStart() {
     console.log("button name:" + buttonName);
     $("#gameStatusMsg").text("Keep trying... ");
-
+    
     // Determine button clicked, get corresponding random number value, add to yourScore
     if(buttonName === "jewelButtonA") {
         yourScore = yourScore + valJewelBtns[0];
